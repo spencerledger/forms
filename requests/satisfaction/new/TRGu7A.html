@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Feedback Form</title>
+  <link rel="icon" href="https://cdn.spencers.zone/images/SLFavicon.ico" type="image/x-icon" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+    }
+  </style>
+  <script>
+    // Title flipper logic
+    let titles = ["Contact Feedback Form", "The Spencer Ledger Website"];
+    let index = 0;
+
+    setInterval(() => {
+      document.title = titles[index];
+      index = (index + 1) % titles.length;
+    }, 3000); // every 3 seconds
+  </script>
+</head>
+<body>
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeabx9GPE4VfwHJV_kON8k5iASXxaXa0AQLs3h1tirSq4VP-A/viewform?embedded=true" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
