@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>Simple Feedback Form</title>
   <link rel="icon" href="https://cdn.spencers.zone/images/SLFavicon.ico" type="image/x-icon" />
+
+  <!-- Tally Embed Script -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
   <style>
     html, body {
       margin: 0;
@@ -14,12 +18,18 @@
     }
 
     iframe {
+      position: absolute; 
+      top: 0; 
+      right: 0; 
+      bottom: 0; 
+      left: 0;
       width: 100vw;
       height: 100vh;
       border: none;
       display: block;
     }
   </style>
+
   <script>
     // Title flipper logic
     let titles = ["Simple Feedback Form", "The Spencer Ledger Website"];
@@ -32,9 +42,18 @@
   </script>
 </head>
 <body>
+
+  <!-- Your new Tally Form iframe from image_21127b.png -->
   <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSfRRaA93F8Po32oL0ODm3PlIFDxXSEYxykd2ZFlHcwh65N3nw/viewform?embedded=true" 
+    data-tally-src="https://tally.so/r/2EVeZV?transparentBackground=1&formEventsForwarding=1" 
+    width="100%" 
+    height="100%" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    title="Form"
     allowfullscreen>
   </iframe>
+
 </body>
 </html>
